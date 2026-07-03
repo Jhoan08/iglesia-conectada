@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:iglesia_conectada/data/eventos_prueba.dart';
+import 'package:iglesia_conectada/models/evento.dart';
 
 void main() {
-  runApp(const MyApp());
+  //runApp(const MyApp());
+  for (Evento evento in eventosPrueba) {
+    print('${evento.titulo} - ${evento.fecha}');
+  }
 }
 
 class MyApp extends StatelessWidget {
